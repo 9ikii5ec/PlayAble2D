@@ -2,23 +2,52 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(SpriteRenderer))]
 public class Build : MonoBehaviour
 {
     [SerializeField] private BuildGrid buildGrid;
+    [SerializeField] private float snapSpeed = 10f;
 
     private Vector3 offset;
     private bool isDragging = false;
     private Vector2 originalPosition;
+    private Vector3 targetPosition;
+    private bool isSnapping = false;
+
+    private SpriteRenderer spriteRenderer;
+    private int originalSortingOrder;
 
     private void Awake()
     {
         originalPosition = transform.position;
+        targetPosition = transform.position;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        originalSortingOrder = spriteRenderer.sortingOrder;
+    }
+
+    private void Update()
+    {
+        if (isSnapping)
+        {
+            transform.position = Vector3.Lerp(transform.position, targetPosition, snapSpeed * Time.deltaTime);
+
+            if (Vector3.Distance(transform.position, targetPosition) < 0.01f)
+            {
+                transform.position = targetPosition;
+                isSnapping = false;
+            }
+        }
     }
 
     private void OnMouseDown()
     {
         offset = transform.position - GetMouseWorldPosition();
         isDragging = true;
+
+        originalSortingOrder = spriteRenderer.sortingOrder;
+        spriteRenderer.sortingOrder++;
+
+        isSnapping = false; // Прерываем авто-снап, если он был
     }
 
     private void OnMouseDrag()
@@ -30,12 +59,13 @@ public class Build : MonoBehaviour
     {
         isDragging = false;
         SnapToCell();
+        spriteRenderer.sortingOrder = originalSortingOrder;
     }
 
     private void SnapToCell()
     {
         List<Vector2> cellPositions = buildGrid.CellPositions;
-        Vector2 targetPosition = originalPosition;
+        Vector2 bestPosition = originalPosition;
         float minDistance = float.MaxValue;
 
         foreach (Vector2 cellPosition in cellPositions)
@@ -46,13 +76,14 @@ public class Build : MonoBehaviour
                 if (distance < minDistance)
                 {
                     minDistance = distance;
-                    targetPosition = cellPosition;
+                    bestPosition = cellPosition;
                 }
             }
         }
 
-        transform.position = targetPosition;
-        originalPosition = targetPosition;
+        targetPosition = bestPosition;
+        originalPosition = bestPosition;
+        isSnapping = true;
     }
 
     private bool IsCellOccupied(Vector2 cellPosition)
