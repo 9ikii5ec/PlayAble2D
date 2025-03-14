@@ -1,0 +1,22 @@
+report@config:load 16.07
+Authorized using stored user info.
+report@account:authorize 32.17
+stderr: "rm" �� ���� ����७��� ��� ���譥�
+��������, �ᯮ��塞�� �ணࠬ��� ��� ������ 䠩���.
+
+Exporting assets from Unity...............
+
+Error: System.IO.FileNotFoundException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Could not load file or assembly 'Bridge, Version=17.9.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+  at (wrapper managed-to-native) System.Reflection.Assembly.InternalGetType(System.Reflection.Assembly,System.Reflection.Module,string,bool,bool)
+  at System.Reflection.RuntimeAssembly.GetType (System.String name, System.Boolean throwOnError, System.Boolean ignoreCase) [0x00022] in <27124aa0e30a41659b903b822b959bc7>:0 
+  at System.Reflection.Assembly.GetType (System.String name) [0x00000] in <27124aa0e30a41659b903b822b959bc7>:0 
+  at  . ⁪.  () [0x0003d] in <c74e6a5315a84c429fb27feef53ebf7d>:0 
+  at  .  .  (Luna.Unity.EditorScripts.EditorScripts.Utils.PackageUsage.SupportedPackageModel.SupportedPackages ) [0x00009] in <c74e6a5315a84c429fb27feef53ebf7d>:0 
+  at  .⁮.  () [0x00046] in <c74e6a5315a84c429fb27feef53ebf7d>:0 
+  at  .⁗.  () [0x000be] in <c74e6a5315a84c429fb27feef53ebf7d>:0 
+  at  . ⁡.  () [0x000ca] in <c74e6a5315a84c429fb27feef53ebf7d>:0 
+  at  . —.  () [0x00151] in <c74e6a5315a84c429fb27feef53ebf7d>:0 
+Caused By: 
+Error: Exceptions was thrown!
+    at _0x4be061.action (C:\Users\niiit\Downloads\Telegram Desktop\6.2.1\pipeline\Jakefile.js:6:3019198)
