@@ -9,20 +9,20 @@ public class Build : MonoBehaviour
     [SerializeField] private float snapSpeed = 10f;
 
     private Vector3 offset;
-    private bool isDragging = false;
-    private Vector2 originalPosition;
+    private Vector2 defaultPosition;
     private Vector3 targetPosition;
     private bool isSnapping = false;
+    private bool isDragging = false;
 
     private SpriteRenderer spriteRenderer;
-    private int originalSortingOrder;
+    private int defaultSortingOrder;
 
     private void Awake()
     {
-        originalPosition = transform.position;
+        defaultPosition = transform.position;
         targetPosition = transform.position;
         spriteRenderer = GetComponent<SpriteRenderer>();
-        originalSortingOrder = spriteRenderer.sortingOrder;
+        defaultSortingOrder = spriteRenderer.sortingOrder;
     }
 
     private void Update()
@@ -44,10 +44,10 @@ public class Build : MonoBehaviour
         offset = transform.position - GetMouseWorldPosition();
         isDragging = true;
 
-        originalSortingOrder = spriteRenderer.sortingOrder;
+        defaultSortingOrder = spriteRenderer.sortingOrder;
         spriteRenderer.sortingOrder++;
 
-        isSnapping = false; // Прерываем авто-снап, если он был
+        isSnapping = false;
     }
 
     private void OnMouseDrag()
@@ -59,18 +59,18 @@ public class Build : MonoBehaviour
     {
         isDragging = false;
         SnapToCell();
-        spriteRenderer.sortingOrder = originalSortingOrder;
+        spriteRenderer.sortingOrder = defaultSortingOrder;
     }
 
     private void SnapToCell()
     {
         List<Vector2> cellPositions = buildGrid.CellPositions;
-        Vector2 bestPosition = originalPosition;
+        Vector2 bestPosition = defaultPosition;
         float minDistance = float.MaxValue;
 
         foreach (Vector2 cellPosition in cellPositions)
         {
-            if (!IsCellOccupied(cellPosition))
+            if (!IsBusyCell(cellPosition))
             {
                 float distance = Vector2.Distance(transform.position, cellPosition);
                 if (distance < minDistance)
@@ -82,11 +82,11 @@ public class Build : MonoBehaviour
         }
 
         targetPosition = bestPosition;
-        originalPosition = bestPosition;
+        defaultPosition = bestPosition;
         isSnapping = true;
     }
 
-    private bool IsCellOccupied(Vector2 cellPosition)
+    private bool IsBusyCell(Vector2 cellPosition)
     {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(cellPosition, 0.1f);
         foreach (Collider2D collider in colliders)
