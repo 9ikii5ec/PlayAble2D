@@ -87,7 +87,6 @@
         "assets": {
             "export": [],
             "excludes": [
-                "Assets/Sprites/",
                 "**/Editor/",
                 "**/FacebookSDK/",
                 "**/googleads**/",

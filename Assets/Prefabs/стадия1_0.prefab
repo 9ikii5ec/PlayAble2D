@@ -99,6 +99,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildGrid: {fileID: 0}
+  buildPrefab: {fileID: 484501717961617595, guid: ec6e602d87965384896f322a57dfce92, type: 3}
+  snapSpeed: 10
+  mergeSpeed: 5
+  buildingLevel: 1
 --- !u!58 &7387400575532234771
 CircleCollider2D:
   m_ObjectHideFlags: 0

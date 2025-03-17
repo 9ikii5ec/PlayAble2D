@@ -1,1 +1,101 @@
-{"types":[{"assets":[{"title":"UI/Default","lunaPath":"C:\\Users\\niiit\\OneDrive\\Документы\\GitHub\\PlayAble2D\\LunaTemp\\stage2\\assets\\shaders\\28.json","size":2033},{"title":"Sprites/Default","lunaPath":"C:\\Users\\niiit\\OneDrive\\Документы\\GitHub\\PlayAble2D\\LunaTemp\\stage2\\assets\\shaders\\26.json","size":1121},{"title":"Hidden/BlitCopy","lunaPath":"C:\\Users\\niiit\\OneDrive\\Документы\\GitHub\\PlayAble2D\\LunaTemp\\stage2\\assets\\shaders\\48.json","size":750},{"title":"Hidden/InternalErrorShader","lunaPath":"C:\\Users\\niiit\\OneDrive\\Документы\\GitHub\\PlayAble2D\\LunaTemp\\stage2\\assets\\shaders\\32.json","size":6}],"title":"shaders","size":3910},{"assets":[{"title":"SampleScene","path":"Assets/Scenes/SampleScene.unity","lunaPath":"C:\\Users\\niiit\\OneDrive\\Документы\\GitHub\\PlayAble2D\\LunaTemp\\stage2\\assets\\scenes\\0.json","size":3135,"gameObjectsCount":84,"componentsCount":163}],"title":"scenes","size":3135},{"assets":[{"title":"стадия1_0","path":"Assets/Prefabs/стадия1_0.prefab","lunaPath":"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage2/assets/prefabs/24034.json","size":341,"gameObjectsCount":1,"componentsCount":4},{"title":"этап2_1","path":"Assets/Prefabs/этап2_1.prefab","lunaPath":"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage2/assets/prefabs/24032.json","size":326,"gameObjectsCount":1,"componentsCount":4},{"title":"стадия2_0","path":"Assets/Prefabs/стадия2_0.prefab","lunaPath":"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage2/assets/prefabs/24036.json","size":324,"gameObjectsCount":1,"componentsCount":4}],"title":"prefabs","size":991},{"assets":[{"title":"-1.json","lunaPath":"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage2/assets/project-settings/-1.json","size":652}],"title":"project-settings","size":652},{"assets":[{"title":"Sprites-Default","path":"Resources/unity_builtin_extra\\Sprites-Default","lunaPath":"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage2/assets/materials/444.json","size":239},{"title":"Default UI Material","path":"Default UI Material","lunaPath":"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage2/assets/materials/-6688.json","size":226}],"title":"materials","size":465},{"assets":[{"title":"0.json","lunaPath":"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage2/assets/resources/0.json","size":170}],"title":"resources","size":170}],"total":692925,"scripts":538790,"preloader":0,"other":144812}
+report@config:load 126.23
+Found a stored user info, but it is no longer valid.
+Permissions were validated successfully.
+report@account:authorize 1102.69
+stderr: "rm" �� ���� ����७��� ��� ���譥�
+��������, �ᯮ��塞�� �ணࠬ��� ��� ������ 䠩���.
+
+Exporting assets from Unity.........................
+
+[ Stage1 ] Assets exported from Unity and staged for further processing
+report@unity:export 22345.95
+report@config:load 157.61
+[ error ] $Failed to compress texture 
+[ error ] $Unity asset path: Assets/Sprites/stage3.png
+[ error ] $Luna asset path: C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24534.png
+[ error ] $ - Command failed: "C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe" --force --quality=1-65 --speed=1 --strip "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24534.png" --output "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24534.png"
+[ error ] $  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24534.png for reading
+[ error ] $
+[ error ] $Failed to compress texture 
+[ error ] $Unity asset path: Assets/Sprites/stage1.png
+[ error ] $Luna asset path: C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24528.png
+[ error ] $ - Command failed: "C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe" --force --quality=1-65 --speed=1 --strip "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24528.png" --output "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24528.png"
+[ error ] $  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24528.png for reading
+[ error ] $
+[ error ] $Failed to compress texture 
+[ error ] $Unity asset path: Assets/Sprites/floor2/back2stage.png
+[ error ] $Luna asset path: C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24548.png
+[ error ] $ - Command failed: "C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe" --force --quality=1-65 --speed=1 --strip "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24548.png" --output "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24548.png"
+[ error ] $  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24548.png for reading
+[ error ] $
+[ error ] $Failed to compress texture 
+[ error ] $Unity asset path: Assets/Sprites/floor2/stage2 (1).png
+[ error ] $Luna asset path: C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24540.png
+[ error ] $ - Command failed: "C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe" --force --quality=1-65 --speed=1 --strip "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24540.png" --output "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24540.png"
+[ error ] $  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24540.png for reading
+[ error ] $
+[ error ] $Failed to compress texture 
+[ error ] $Unity asset path: Assets/Sprites/cloud_1.png
+[ error ] $Luna asset path: C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24538.png
+[ error ] $ - Command failed: "C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe" --force --quality=1-65 --speed=1 --strip "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24538.png" --output "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24538.png"
+[ error ] $  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24538.png for reading
+[ error ] $
+[ error ] $Failed to compress texture 
+[ error ] $Unity asset path: Assets/Sprites/floor2/back2stageCarrot.png
+[ error ] $Luna asset path: C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24536.png
+[ error ] $ - Command failed: "C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe" --force --quality=1-65 --speed=1 --strip "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24536.png" --output "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24536.png"
+[ error ] $  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24536.png for reading
+[ error ] $
+[ error ] $Failed to compress texture 
+[ error ] $Unity asset path: Assets/Sprites/stage4Complete.png
+[ error ] $Luna asset path: C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24542.png
+[ error ] $ - Command failed: "C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe" --force --quality=1-65 --speed=1 --strip "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24542.png" --output "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24542.png"
+[ error ] $  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24542.png for reading
+[ error ] $
+[ error ] $Failed to compress texture 
+[ error ] $Unity asset path: Assets/Sprites/floor2/woodgenerator_stage1.png
+[ error ] $Luna asset path: C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24550.png
+[ error ] $ - Command failed: "C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe" --force --quality=1-65 --speed=1 --strip "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24550.png" --output "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24550.png"
+[ error ] $  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24550.png for reading
+[ error ] $
+[ error ] $Failed to compress texture 
+[ error ] $Unity asset path: Assets/Sprites/floor2/stage4 (3).png
+[ error ] $Luna asset path: C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24546.png
+[ error ] $ - Command failed: "C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe" --force --quality=1-65 --speed=1 --strip "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24546.png" --output "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24546.png"
+[ error ] $  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24546.png for reading
+[ error ] $
+[ error ] $Failed to compress texture 
+[ error ] $Unity asset path: Assets/Sprites/stage2.png
+[ error ] $Luna asset path: C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24522.png
+[ error ] $ - Command failed: "C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe" --force --quality=1-65 --speed=1 --strip "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24522.png" --output "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24522.png"
+[ error ] $  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24522.png for reading
+[ error ] $
+[ error ] $Failed to compress texture 
+[ error ] $Unity asset path: Assets/Sprites/floor2/stage2 (2).png
+[ error ] $Luna asset path: C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24544.png
+[ error ] $ - Command failed: "C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe" --force --quality=1-65 --speed=1 --strip "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24544.png" --output "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24544.png"
+[ error ] $  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24544.png for reading
+[ error ] $
+[ error ] $Failed to compress texture 
+[ error ] $Unity asset path: Assets/Sprites/floor2/stage3 (2).png
+[ error ] $Luna asset path: C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24552.png
+[ error ] $ - Command failed: "C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe" --force --quality=1-65 --speed=1 --strip "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24552.png" --output "C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24552.png"
+[ error ] $  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24552.png for reading
+[ error ] $
+[ error ] $Texture Compression Failed
+[ error ] $Texture Compression Failed
+[ error ] $Texture Compression Failed
+[ error ] $Texture Compression Failed
+[ error ] $Texture Compression Failed
+[ error ] $Texture Compression Failed
+[ error ] $Texture Compression Failed
+[ error ] $Texture Compression Failed
+[ error ] $Texture Compression Failed
+[ error ] $Texture Compression Failed
+[ error ] $Texture Compression Failed
+[ error ] $Texture Compression Failed
+[ error ] $Project failed to build, check project diagnostics
+Error: DIAGNOSTICS
+    at _0x1d1716.processErrors (C:\Users\niiit\Downloads\Telegram Desktop\6.2.1\pipeline\Jakefile.js:6:3080836)
+    at async _0x1d1716.run (C:\Users\niiit\Downloads\Telegram Desktop\6.2.1\pipeline\Jakefile.js:6:3078029)
+    at async _0x4be061.action (C:\Users\niiit\Downloads\Telegram Desktop\6.2.1\pipeline\Jakefile.js:6:2924271)
