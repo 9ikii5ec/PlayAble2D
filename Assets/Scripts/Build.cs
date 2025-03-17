@@ -7,6 +7,9 @@ public class Build : MonoBehaviour
 {
     [SerializeField] private BuildGrid buildGrid;
     [SerializeField] private float snapSpeed = 10f;
+    [SerializeField] private float rayDistance = 1f;
+    [SerializeField] private int buildingLevel = 1;
+    [SerializeField] private Color rayColor = Color.green;
 
     private Vector3 offset;
     private Vector2 defaultPosition;
@@ -35,6 +38,8 @@ public class Build : MonoBehaviour
             {
                 transform.position = targetPosition;
                 isSnapping = false;
+
+                PerformRaycastCheck();
             }
         }
     }
@@ -105,4 +110,55 @@ public class Build : MonoBehaviour
         mousePosition.z = Camera.main.WorldToScreenPoint(transform.position).z;
         return Camera.main.ScreenToWorldPoint(mousePosition);
     }
+
+    private void OnDrawGizmos()
+    {
+        DrawRaycasts();
+    }
+
+    private void PerformRaycastCheck()
+    {
+        Vector3 origin = transform.position;
+        float angleOffset = 60f;
+        float angleStep = 60f;
+        int matchingCount = 0;
+
+        for (int i = 0; i < 6; i++)
+        {
+            float angle = angleOffset + angleStep * i;
+            Vector3 direction = Quaternion.Euler(0, 0, angle) * Vector3.up;
+
+            RaycastHit2D hit = Physics2D.Raycast(origin, direction.normalized, rayDistance);
+
+
+            Build otherBuild = hit.collider.GetComponent<Build>();
+            if (otherBuild.buildingLevel == buildingLevel)
+            {
+                matchingCount++;
+            }
+
+            if (matchingCount == 2)
+            {
+                Debug.Log($"Найдено 2 совпадения уровня ({buildingLevel}) рядом с объектом: {name}");
+                return;
+            }
+        }
+    }
+
+    private void DrawRaycasts()
+    {
+        Vector3 origin = transform.position;
+        float angleOffset = 60f;
+        float angleStep = 60f;
+
+        Gizmos.color = rayColor;
+
+        for (int i = 0; i < 6; i++)
+        {
+            float angle = angleOffset + angleStep * i;
+            Vector3 direction = Quaternion.Euler(0, 0, angle) * Vector3.up;
+            Gizmos.DrawLine(origin, origin + direction.normalized * rayDistance);
+        }
+    }
+
 }

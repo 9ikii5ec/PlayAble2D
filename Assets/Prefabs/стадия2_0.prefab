@@ -99,6 +99,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildGrid: {fileID: 0}
+  snapSpeed: 10
+  rayDistance: 1
+  buildingLevel: 2
+  rayColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!58 &6714124855966104072
 CircleCollider2D:
   m_ObjectHideFlags: 0
