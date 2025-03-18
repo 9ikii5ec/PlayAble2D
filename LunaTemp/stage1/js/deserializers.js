@@ -1065,9 +1065,13 @@ Deserializers.unityVersion = "2022.3.22f1";
 
 Deserializers.productName = "PlayAble2D";
 
-Deserializers.lunaInitializationTime = "03/13/2025 18:59:08";
+Deserializers.lunaInitializationTime = "03/18/2025 09:22:42";
 
+<<<<<<< Updated upstream
 Deserializers.lunaDaysRunning = "4.6";
+=======
+Deserializers.lunaDaysRunning = "0.0";
+>>>>>>> Stashed changes
 
 Deserializers.lunaVersion = "6.2.1";
 
@@ -1097,9 +1101,9 @@ Deserializers.isAntiAliasingEnabled = "False";
 
 Deserializers.isRuntimeAnalysisEnabledForCode = "True";
 
-Deserializers.runtimeAnalysisExcludedClassesCount = "1712";
+Deserializers.runtimeAnalysisExcludedClassesCount = "1760";
 
-Deserializers.runtimeAnalysisExcludedMethodsCount = "2556";
+Deserializers.runtimeAnalysisExcludedMethodsCount = "2946";
 
 Deserializers.runtimeAnalysisExcludedModules = "particle-system, reflection, prefabs, mecanim-wasm";
 
@@ -1123,7 +1127,11 @@ Deserializers.graphicsConstraint = 28;
 
 Deserializers.linearColorSpace = false;
 
+<<<<<<< Updated upstream
 Deserializers.buildID = "6c25bb33-67bc-4778-aca0-c42a5eac86e2";
+=======
+Deserializers.buildID = "6255b5e2-0695-44de-ac55-6538f69025e6";
+>>>>>>> Stashed changes
 
 Deserializers.runtimeInitializeOnLoadInfos = [[["UnityEngine","Experimental","Rendering","ScriptableRuntimeReflectionSystemSettings","ScriptingDirtyReflectionSystemInstance"]],[["Unity","VisualScripting","RuntimeVSUsageUtility","RuntimeInitializeOnLoadBeforeSceneLoad"]],[["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"]],[],[]];
 

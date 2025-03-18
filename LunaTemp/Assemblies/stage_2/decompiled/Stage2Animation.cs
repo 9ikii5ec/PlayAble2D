@@ -1,0 +1,132 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Stage2Animation : MonoBehaviour
+{
+	[Header("Появление объектов")]
+	[SerializeField]
+	private List<GameObject> objectsToAppear = new List<GameObject>();
+
+	[SerializeField]
+	private float appearDelay = 0.2f;
+
+	[SerializeField]
+	private float appearRiseDistance = 1f;
+
+	[SerializeField]
+	private float appearDuration = 1f;
+
+	[Header("Исчезновение объектов")]
+	[SerializeField]
+	private List<GameObject> objectsToDisappear = new List<GameObject>();
+
+	[SerializeField]
+	private float disappearDelay = 0.2f;
+
+	[SerializeField]
+	private float disappearRiseDistance = 1f;
+
+	[SerializeField]
+	private float disappearDuration = 1f;
+
+	private FadeScreen fadeScreen;
+
+	private void Start()
+	{
+		fadeScreen = Object.FindObjectOfType<FadeScreen>();
+	}
+
+	public void StartSequence()
+	{
+		StartCoroutine(AppearSequence());
+	}
+
+	public void StartDisappearSequence()
+	{
+		StartCoroutine(DisappearSequence());
+	}
+
+	private IEnumerator AppearSequence()
+	{
+		for (int i = 0; i < objectsToAppear.Count; i++)
+		{
+			GameObject obj = objectsToAppear[i];
+			if (obj != null)
+			{
+				StartCoroutine(Appear(obj));
+				yield return new WaitForSeconds(appearDelay);
+			}
+		}
+		yield return new WaitForSeconds(appearDuration + 0.6f);
+		if (fadeScreen != null)
+		{
+			fadeScreen.FadeIn(delegate
+			{
+				Debug.Log("Появление завершено и экран затемнён");
+			});
+		}
+	}
+
+	private IEnumerator DisappearSequence()
+	{
+		for (int i = objectsToDisappear.Count - 1; i >= 0; i--)
+		{
+			GameObject obj = objectsToDisappear[i];
+			if (obj != null)
+			{
+				StartCoroutine(Disappear(obj));
+				yield return new WaitForSeconds(disappearDelay);
+			}
+		}
+	}
+
+	private IEnumerator Appear(GameObject obj)
+	{
+		SpriteRenderer sr = obj.GetComponent<SpriteRenderer>();
+		Vector3 endPos = obj.transform.position;
+		Vector3 startPos = endPos + Vector3.up * appearRiseDistance;
+		obj.transform.position = startPos;
+		if (sr != null)
+		{
+			Color color2 = sr.color;
+			color2.a = 0f;
+			sr.color = color2;
+		}
+		float timer = 0f;
+		while (timer < appearDuration)
+		{
+			timer += Time.deltaTime;
+			float t = timer / appearDuration;
+			obj.transform.position = Vector3.Lerp(startPos, endPos, t);
+			if (sr != null)
+			{
+				Color color = sr.color;
+				color.a = Mathf.Lerp(0f, 1f, t);
+				sr.color = color;
+			}
+			yield return null;
+		}
+	}
+
+	private IEnumerator Disappear(GameObject obj)
+	{
+		SpriteRenderer sr = obj.GetComponent<SpriteRenderer>();
+		Vector3 startPos = obj.transform.position;
+		Vector3 endPos = startPos + Vector3.up * disappearRiseDistance;
+		float timer = 0f;
+		while (timer < disappearDuration)
+		{
+			timer += Time.deltaTime;
+			float t = timer / disappearDuration;
+			obj.transform.position = Vector3.Lerp(startPos, endPos, t);
+			if (sr != null)
+			{
+				Color color = sr.color;
+				color.a = Mathf.Lerp(1f, 0f, t);
+				sr.color = color;
+			}
+			yield return null;
+		}
+	}
+}

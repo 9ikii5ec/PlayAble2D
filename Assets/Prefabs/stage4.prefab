@@ -139,6 +139,7 @@ MonoBehaviour:
   snapSpeed: 10
   mergeSpeed: 5
   buildingLevel: 4
+  isMovable: 1
 --- !u!114 &-803898591655652139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,3 +153,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 0}
+  cameraFollow: {fileID: 0}

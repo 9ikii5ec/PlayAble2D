@@ -199,7 +199,7 @@
       "url": "https://packages.unity.com"
     },
     "uk.lunalabs.luna": {
-      "version": "file:../../../../../Downloads/Telegram Desktop/6.2.1/scripts",
+      "version": "file:../../Users/niiit/Downloads/Telegram Desktop/6.2.1 2/scripts",
       "depth": 0,
       "source": "local",
       "dependencies": {}

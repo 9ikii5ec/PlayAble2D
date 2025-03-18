@@ -1,24 +1,24 @@
 {
-  "BuildID": "44fed98b-31cd-4f5f-8514-28c9bf57d1f3",
-  "Command": "project:build",
+  "BuildID": "4b6f5fbc-0c2b-4b78-9ea3-f5cda8b4bd95",
+  "Command": "project:recompile",
   "ProjectID": "127fff9b131b12844843f7bc3bdd87bf",
-  "ProjectStateHash": "d7aa7ee6c18f716fd55db3ad6096ca0d082d608ff3b390872c9d83d6eb451882",
+  "ProjectStateHash": "93104d55c7ac7eac12722f5032cb4d79c32815e46094bf4e33db346b7e402867",
   "StageCompletedAt": 3,
   "EarliestFatalError": 0,
-  "StartTime": 1741979545192,
-  "EndTime": 1741979663656,
+  "StartTime": 1742292365611,
+  "EndTime": 1742292410576,
   "PlaygroundUserID": 21453,
   "OperatingSystem": "win32",
   "UnityPackageID": null,
   "TargetPlatform": "develop",
   "UnityVersion": "2022.3.22f1",
   "LunaVersion": "6.2.1",
-  "LogCount": 4,
+  "LogCount": 5,
   "Logs": [
     {
-      "LogID": "ae9f8d8d-87a5-44ce-a0f6-d722099c93e5",
-      "Order": 1,
-      "Timestamp": 1741979664199,
+      "LogID": "73da00bf-2013-466d-86f4-e1e863119474",
+      "Order": 2,
+      "Timestamp": 1742292411085,
       "Stage": 3,
       "ErrorType": 1,
       "ErrorCode": "LP3006",
@@ -42,9 +42,9 @@
       "Severity": 0
     },
     {
-      "LogID": "5162b400-1f9e-497c-befa-7737ba8674a7",
-      "Order": 1,
-      "Timestamp": 1741979664202,
+      "LogID": "5a7a37e3-eb6d-4b2b-a9d3-5ac7f53b965d",
+      "Order": 2,
+      "Timestamp": 1742292411087,
       "Stage": 3,
       "ErrorType": 1,
       "ErrorCode": "LP3006",
@@ -68,9 +68,9 @@
       "Severity": 0
     },
     {
-      "LogID": "89a9862a-0290-43ea-82a2-c0509ca32938",
-      "Order": 1,
-      "Timestamp": 1741979664204,
+      "LogID": "b5d95afb-8338-4299-ab9e-e6cfb1baa44a",
+      "Order": 2,
+      "Timestamp": 1742292411088,
       "Stage": 3,
       "ErrorType": 3,
       "ErrorCode": "LP3007",
@@ -92,9 +92,9 @@
       "Severity": 0
     },
     {
-      "LogID": "aa500910-da01-43d1-9bd1-308b1520900e",
-      "Order": 1,
-      "Timestamp": 1741979664207,
+      "LogID": "9282ecdf-9907-4afa-afb6-84b5c7403d64",
+      "Order": 2,
+      "Timestamp": 1742292411090,
       "Stage": 3,
       "ErrorType": 3,
       "ErrorCode": "LP3011",
@@ -106,6 +106,28 @@
       "DetailsValues": null,
       "LogCount": 1,
       "LinePosition": null,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "81778b53-7be1-4c6b-9f6e-3e200a9d481f",
+      "Order": 0,
+      "Timestamp": 1742292125691,
+      "Stage": 1,
+      "ErrorType": 0,
+      "ErrorCode": "LP1027",
+      "Description": "This DOTween version is not supported",
+      "Details": [
+        "The incorrect DOTween version for this Unity version is in use, please update or downgrade to the recommended version {0} in the package manager. Go to Window → Package Manager."
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [
+        ""
+      ],
+      "LogCount": 1,
+      "LinePosition": 0,
       "FilePath": "",
       "ClassName": "",
       "MemberName": "",
