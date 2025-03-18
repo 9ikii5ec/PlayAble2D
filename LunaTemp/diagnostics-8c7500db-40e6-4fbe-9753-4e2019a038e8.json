@@ -1,0 +1,208 @@
+{
+    "BuildID": "8c7500db-40e6-4fbe-9753-4e2019a038e8",
+    "Command": "project:build",
+    "ProjectID": "127fff9b131b12844843f7bc3bdd87bf",
+    "ProjectStateHash": "d2fde152a43b7deab3d7961fd00ae629c80b027c18fa07a5ca46d597b0c4454e",
+    "StageCompletedAt": 2,
+    "EarliestFatalError": 0,
+    "StartTime": 1742286575984,
+    "EndTime": 1742286590134,
+    "PlaygroundUserID": 21453,
+    "OperatingSystem": "win32",
+    "TargetPlatform": "develop",
+    "UnityVersion": "2022.3.22f1",
+    "LunaVersion": "6.2.1",
+    "LogCount": 8,
+    "Logs": [
+        {
+            "LogID": "bb314332-62a0-43b9-8a28-3c1b49c6220c",
+            "Timestamp": 1742286583252,
+            "Stage": 1,
+            "Severity": 0,
+            "ErrorType": 0,
+            "ErrorCode": "LP1027",
+            "Description": "This DOTween version is not supported",
+            "Details": [
+                "The incorrect DOTween version for this Unity version is in use, please update or downgrade to the recommended version {0} in the package manager. Go to Window → Package Manager."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "FilePath": "",
+            "LinePosition": 0,
+            "ClassName": "",
+            "MemberName": "",
+            "Order": 0
+        },
+        {
+            "LogID": "150f37af-7113-41de-9d11-46ac203332fc",
+            "Order": 1,
+            "Timestamp": 1742286589522,
+            "Stage": 2,
+            "Severity": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP2003",
+            "Description": "Texture Compression Failed",
+            "Details": [
+                "Failed to compress texture \nUnity asset path: Assets/Sprites/stage3.png\nLuna asset path: C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24406.png\n",
+                "Error: Command failed: \"C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe\" --force --quality=1-65 --speed=1 --strip \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24406.png\" --output \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24406.png\"\n  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24406.png for reading\r\n"
+            ],
+            "DescriptionValues": null,
+            "DetailsValues": [
+                "Assets/Sprites/stage3.png",
+                "Error: Command failed: \"C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe\" --force --quality=1-65 --speed=1 --strip \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24406.png\" --output \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24406.png\"\n  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24406.png for reading\r\n"
+            ],
+            "LogCount": 1,
+            "FilePath": "Assets/Sprites/stage3.png",
+            "LinePosition": null,
+            "ClassName": null,
+            "MemberName": null
+        },
+        {
+            "LogID": "9ebfce10-5849-49a5-9433-c501b6f8493f",
+            "Order": 2,
+            "Timestamp": 1742286589525,
+            "Stage": 2,
+            "Severity": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP2003",
+            "Description": "Texture Compression Failed",
+            "Details": [
+                "Failed to compress texture \nUnity asset path: Assets/Sprites/stage2.png\nLuna asset path: C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24408.png\n",
+                "Error: Command failed: \"C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe\" --force --quality=1-65 --speed=1 --strip \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24408.png\" --output \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24408.png\"\n  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24408.png for reading\r\n"
+            ],
+            "DescriptionValues": null,
+            "DetailsValues": [
+                "Assets/Sprites/stage2.png",
+                "Error: Command failed: \"C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe\" --force --quality=1-65 --speed=1 --strip \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24408.png\" --output \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24408.png\"\n  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24408.png for reading\r\n"
+            ],
+            "LogCount": 1,
+            "FilePath": "Assets/Sprites/stage2.png",
+            "LinePosition": null,
+            "ClassName": null,
+            "MemberName": null
+        },
+        {
+            "LogID": "e893226e-36e6-4804-99d0-14fff4932d27",
+            "Order": 3,
+            "Timestamp": 1742286589564,
+            "Stage": 2,
+            "Severity": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP2003",
+            "Description": "Texture Compression Failed",
+            "Details": [
+                "Failed to compress texture \nUnity asset path: Assets/Sprites/stage4.png\nLuna asset path: C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24410.png\n",
+                "Error: Command failed: \"C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe\" --force --quality=1-65 --speed=1 --strip \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24410.png\" --output \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24410.png\"\n  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24410.png for reading\r\n"
+            ],
+            "DescriptionValues": null,
+            "DetailsValues": [
+                "Assets/Sprites/stage4.png",
+                "Error: Command failed: \"C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe\" --force --quality=1-65 --speed=1 --strip \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24410.png\" --output \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24410.png\"\n  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24410.png for reading\r\n"
+            ],
+            "LogCount": 1,
+            "FilePath": "Assets/Sprites/stage4.png",
+            "LinePosition": null,
+            "ClassName": null,
+            "MemberName": null
+        },
+        {
+            "LogID": "9a2b3701-11af-419a-b756-6f491e1d2e6e",
+            "Order": 4,
+            "Timestamp": 1742286589524,
+            "Stage": 2,
+            "Severity": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP2003",
+            "Description": "Texture Compression Failed",
+            "Details": [
+                "Failed to compress texture \nUnity asset path: Assets/Sprites/stage1.png\nLuna asset path: C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24416.png\n",
+                "Error: Command failed: \"C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe\" --force --quality=1-65 --speed=1 --strip \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24416.png\" --output \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24416.png\"\n  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24416.png for reading\r\n"
+            ],
+            "DescriptionValues": null,
+            "DetailsValues": [
+                "Assets/Sprites/stage1.png",
+                "Error: Command failed: \"C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe\" --force --quality=1-65 --speed=1 --strip \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24416.png\" --output \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24416.png\"\n  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24416.png for reading\r\n"
+            ],
+            "LogCount": 1,
+            "FilePath": "Assets/Sprites/stage1.png",
+            "LinePosition": null,
+            "ClassName": null,
+            "MemberName": null
+        },
+        {
+            "LogID": "9eda3279-7fda-477f-9db7-d3560c17c650",
+            "Order": 5,
+            "Timestamp": 1742286589565,
+            "Stage": 2,
+            "Severity": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP2003",
+            "Description": "Texture Compression Failed",
+            "Details": [
+                "Failed to compress texture \nUnity asset path: Assets/Sprites/stage4Complete.png\nLuna asset path: C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24422.png\n",
+                "Error: Command failed: \"C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe\" --force --quality=1-65 --speed=1 --strip \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24422.png\" --output \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24422.png\"\n  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24422.png for reading\r\n"
+            ],
+            "DescriptionValues": null,
+            "DetailsValues": [
+                "Assets/Sprites/stage4Complete.png",
+                "Error: Command failed: \"C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe\" --force --quality=1-65 --speed=1 --strip \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24422.png\" --output \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24422.png\"\n  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24422.png for reading\r\n"
+            ],
+            "LogCount": 1,
+            "FilePath": "Assets/Sprites/stage4Complete.png",
+            "LinePosition": null,
+            "ClassName": null,
+            "MemberName": null
+        },
+        {
+            "LogID": "be546121-0b92-4323-aa6b-299aa406fc28",
+            "Order": 6,
+            "Timestamp": 1742286589592,
+            "Stage": 2,
+            "Severity": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP2003",
+            "Description": "Texture Compression Failed",
+            "Details": [
+                "Failed to compress texture \nUnity asset path: Assets/Sprites/back1stage.png\nLuna asset path: C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24436.png\n",
+                "Error: Command failed: \"C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe\" --force --quality=1-65 --speed=1 --strip \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24436.png\" --output \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24436.png\"\n  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24436.png for reading\r\n"
+            ],
+            "DescriptionValues": null,
+            "DetailsValues": [
+                "Assets/Sprites/back1stage.png",
+                "Error: Command failed: \"C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe\" --force --quality=1-65 --speed=1 --strip \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24436.png\" --output \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/24436.png\"\n  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/24436.png for reading\r\n"
+            ],
+            "LogCount": 1,
+            "FilePath": "Assets/Sprites/back1stage.png",
+            "LinePosition": null,
+            "ClassName": null,
+            "MemberName": null
+        },
+        {
+            "LogID": "94dd1635-ab34-4184-a2f5-5f568b70ed27",
+            "Order": 7,
+            "Timestamp": 1742286589576,
+            "Stage": 2,
+            "Severity": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP2003",
+            "Description": "Texture Compression Failed",
+            "Details": [
+                "Failed to compress texture \nUnity asset path: Resources/unity_builtin_extra\\Background\nLuna asset path: C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/674.png\n",
+                "Error: Command failed: \"C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe\" --force --quality=1-65 --speed=1 --strip \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/674.png\" --output \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/674.png\"\n  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/674.png for reading\r\n"
+            ],
+            "DescriptionValues": null,
+            "DetailsValues": [
+                "Resources/unity_builtin_extra\\Background",
+                "Error: Command failed: \"C:/Users/niiit/Downloads/Telegram Desktop/6.2.1/tools/pngquant/win64/pngquant.exe\" --force --quality=1-65 --speed=1 --strip \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/674.png\" --output \"C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/compressed/674.png\"\n  error: cannot open C:/Users/niiit/OneDrive/Документы/GitHub/PlayAble2D/LunaTemp/stage1/tmp/textures/convert/674.png for reading\r\n"
+            ],
+            "LogCount": 1,
+            "FilePath": "Resources/unity_builtin_extra\\Background",
+            "LinePosition": null,
+            "ClassName": null,
+            "MemberName": null
+        }
+    ]
+}

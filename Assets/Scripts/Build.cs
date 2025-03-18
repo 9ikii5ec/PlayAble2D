@@ -11,9 +11,11 @@ public class Build : MonoBehaviour
     [SerializeField] private float mergeSpeed = 5f;
     [SerializeField] private int buildingLevel = 0;
 
-    public bool IsSnapping => isSnapping;
-    public int BuildingLevel => buildingLevel;
     public bool isMovable = true;
+    public bool IsSnapping => isSnapping;
+    public bool IsDragging { get; private set; } = false;
+
+    public int BuildingLevel => buildingLevel;
 
     private Vector3 offset;
     private Vector2 defaultPosition;
@@ -73,18 +75,26 @@ public class Build : MonoBehaviour
         }
     }
 
+
     private void OnMouseDown()
     {
-        // Не разрешать перетаскивание, если объект сливается или привязан
-        if (isMerging || isSnapping || isInMergeProcess)
-        {
-            return;
-        }
+        if (isMerging || isSnapping || isInMergeProcess) return;
 
+        IsDragging = true;
         offset = transform.position - GetMouseWorldPosition();
         spriteRenderer.sortingOrder++;
         isSnapping = false;
     }
+
+    private void OnMouseUp()
+    {
+        if (isMerging || isSnapping || isInMergeProcess || !isMovable) return;
+
+        IsDragging = false;
+        SnapToCell();
+        spriteRenderer.sortingOrder = defaultSortingOrder;
+    }
+
 
     private void OnMouseDrag()
     {
@@ -95,18 +105,6 @@ public class Build : MonoBehaviour
         }
 
         transform.position = GetMouseWorldPosition() + offset;
-    }
-
-    private void OnMouseUp()
-    {
-        // Не разрешать завершение перетаскивания, если объект сливается или привязан
-        if (isMerging || isSnapping || isInMergeProcess || !isMovable)
-        {
-            return;
-        }
-
-        SnapToCell();
-        spriteRenderer.sortingOrder = defaultSortingOrder;
     }
 
     private void SnapToCell()

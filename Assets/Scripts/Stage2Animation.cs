@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; // Не забудьте подключить пространство имен для Image
 
 public class Stage2Animation : MonoBehaviour
 {
@@ -17,18 +16,11 @@ public class Stage2Animation : MonoBehaviour
     [SerializeField] private float disappearRiseDistance = 1f;
     [SerializeField] private float disappearDuration = 1f;
 
-    [Header("Панель затемнения")]
-    [SerializeField] private Image fadePanel; // Панель для затемнения
-    [SerializeField] private float fadeDuration = 1f; // Продолжительность затемнения
-
-    private bool isFading = false; // Флаг для предотвращения повторного вызова fade
+    private FadeScreen fadeScreen;
 
     void Start()
     {
-        if (fadePanel == null)
-        {
-            fadePanel = GameObject.Find("FadePanel")?.GetComponent<Image>(); // Найдите панель по имени
-        }
+        fadeScreen = FindObjectOfType<FadeScreen>();
     }
 
     public void StartSequence()
@@ -43,7 +35,6 @@ public class Stage2Animation : MonoBehaviour
 
     private IEnumerator AppearSequence()
     {
-        // Появление сверху вниз
         for (int i = 0; i < objectsToAppear.Count; i++)
         {
             GameObject obj = objectsToAppear[i];
@@ -54,18 +45,19 @@ public class Stage2Animation : MonoBehaviour
             }
         }
 
-        // После появления всех объектов ожидаем некоторое время перед затемнением
-        yield return new WaitForSeconds(appearDuration + 1f); // Дополнительная задержка перед затемнением
-        if (fadePanel != null && !isFading)
+        yield return new WaitForSeconds(appearDuration + 0.6f);
+
+        if (fadeScreen != null)
         {
-            isFading = true;  // Устанавливаем флаг, чтобы избежать дублирования
-            StartCoroutine(FadeInPanel());
+            fadeScreen.FadeIn(() =>
+            {
+                Debug.Log("Появление завершено и экран затемнён");
+            });
         }
     }
 
     private IEnumerator DisappearSequence()
     {
-        // Исчезновение снизу вверх
         for (int i = objectsToDisappear.Count - 1; i >= 0; i--)
         {
             GameObject obj = objectsToDisappear[i];
@@ -74,14 +66,6 @@ public class Stage2Animation : MonoBehaviour
                 StartCoroutine(Disappear(obj));
                 yield return new WaitForSeconds(disappearDelay);
             }
-        }
-
-        // После исчезновения всех объектов ожидаем некоторое время перед затемнением
-        yield return new WaitForSeconds(disappearDuration + 1f); // Дополнительная задержка перед затемнением
-        if (fadePanel != null && !isFading)
-        {
-            isFading = true;  // Устанавливаем флаг, чтобы избежать дублирования
-            StartCoroutine(FadeInPanel());
         }
     }
 
@@ -104,7 +88,6 @@ public class Stage2Animation : MonoBehaviour
         {
             timer += Time.deltaTime;
             float t = timer / appearDuration;
-
             obj.transform.position = Vector3.Lerp(startPos, endPos, t);
 
             if (sr != null)
@@ -115,14 +98,6 @@ public class Stage2Animation : MonoBehaviour
             }
 
             yield return null;
-        }
-
-        obj.transform.position = endPos;
-        if (sr != null)
-        {
-            Color color = sr.color;
-            color.a = 1f;
-            sr.color = color;
         }
     }
 
@@ -137,7 +112,6 @@ public class Stage2Animation : MonoBehaviour
         {
             timer += Time.deltaTime;
             float t = timer / disappearDuration;
-
             obj.transform.position = Vector3.Lerp(startPos, endPos, t);
 
             if (sr != null)
@@ -149,39 +123,5 @@ public class Stage2Animation : MonoBehaviour
 
             yield return null;
         }
-
-        obj.transform.position = endPos;
-        if (sr != null)
-        {
-            Color color = sr.color;
-            color.a = 0f;
-            sr.color = color;
-        }
-
-        // Можно удалить объект, если нужно
-        // Destroy(obj);
-    }
-
-    // Метод для затемнения панели (для Image)
-    private IEnumerator FadeInPanel()
-    {
-        Color color = fadePanel.color;
-        color.a = 0f; // Начальный прозрачный цвет
-        fadePanel.color = color;
-
-        float timer = 0f;
-        while (timer < fadeDuration)
-        {
-            timer += Time.deltaTime;
-            float t = timer / fadeDuration;
-
-            color.a = Mathf.Lerp(0f, 0.9f, t); // Плавное увеличение прозрачности
-            fadePanel.color = color;
-
-            yield return null;
-        }
-
-        color.a = 0.9f; // Обеспечиваем, что панель будет полностью непрозрачной
-        fadePanel.color = color;
     }
 }
